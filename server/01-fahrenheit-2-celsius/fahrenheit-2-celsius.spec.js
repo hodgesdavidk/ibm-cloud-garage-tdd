@@ -8,7 +8,11 @@ describe('the fahrenheit-2-celsius canary spec', () => {
 });
 
 describe('a fahrenheitToCelsius function should', () => {
-  it.todo('return 0 for 32');
+  it('return 0 for 32', () => {
+
+    expect(fahrenheitToCelsius(0)).toBe(32);
+
+  });
   it.todo('return 10 for 50');
   it.todo('return 100 for 212');
   it.todo('return -40 for -40');
