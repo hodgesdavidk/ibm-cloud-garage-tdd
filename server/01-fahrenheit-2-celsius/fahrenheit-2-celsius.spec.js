@@ -26,5 +26,10 @@ describe('a fahrenheitToCelsius function should', () => {
     expect(fahrenheitToCelsius(-40)).toBe(-40);
 
   });
-  it.todo('return -273.15 for -459.67');
+  it('return -273.15 for -459.67', () => {
+    expect(fahrenheitToCelsius(-459.67)).toBe(-273.15)
+  });
+  it('return 232.778 for 451',() => {
+    expect(fahrenheitToCelsius(451)).toBe(232.77777777777777);
+  });
 });
